@@ -126,8 +126,9 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px; /* or any max-width or % based on design */
+  max-width: 1500px; /* or any max-width or % based on design */
   width: 100%;
+  margin-bottom: 200px;
 }
 
 .service {
@@ -139,8 +140,62 @@ body, html {
   width: 30%; /* Adjust based on the actual design */
 }
 
+
+.website{
+margin-left: 100px;
+}
+.website img{
+  width: 40px;
+}
+
+.website h2{
+  margin-top: 10px;
+}
+.website h2:hover{
+ color: green;
+}
+.website p{
+  margin-top: 10px;
+}
+
+
+
+.form{
+  margin-left: 100px;
+  }
+  .form img{
+    width: 40px;
+  }
+  .form h2{
+    margin-top: 10px;
+  }
+  .form h2:hover{
+   color: green;
+  }
+  .form p{
+    margin-top: 10px;
+  }
+
+
+  .subscription{
+    margin-left: 100px;
+    }
+    .subscription img{
+      width: 40px;
+    }
+    .subscription h2{
+      margin-top: 10px;
+    }
+    .subscription h2:hover{
+     color: green;
+    }
+    .subscription p{
+      margin-top: 10px;
+    }
+
+
 .service img {
-  max-width: 100%;
+  max-width: 100px;
   height: auto;
 }
 
