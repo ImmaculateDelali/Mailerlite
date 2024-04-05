@@ -175,7 +175,7 @@ body, html {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-/**/
+
 .hero-containers {
   display: flex;
   align-items: center;
@@ -184,6 +184,8 @@ body, html {
    padding: 1rem;
    margin-top: 100px;
 }
+/**/
+
 .top-section{
   margin-left: 100px;
   margin-right: 100px;
@@ -371,7 +373,7 @@ a {
   font-weight: bold;
 }
 
-/* Responsive Design: Example for smaller screens */
+/* Responsive Design:  */
 @media (max-width: 768px) {
   .service-container {
     flex-direction: column;
@@ -384,5 +386,72 @@ a {
     .dashboard {
         grid-template-columns: 1fr;
     }
+  }
+}
+/* Responsive Design:  */
+@media (max-width: 768px) {
+  .sticky-nav {
+      padding: 10px;
+      flex-wrap: wrap;
+  }
+
+  .nav-left,
+  .nav-middle,
+  .nav-right,
+  .logo,
+  .nav-middle a,
+  .nav-right a,
+  .signup-btn,
+  .freesignup-btn,
+  .header h1,
+  .header h4,
+  .header p {
+      margin: 10px 0;
+      text-align: center;
+      width: 100%;
+  }
+
+  .logo img {
+      width: 150px; 
+  }
+
+  .nav-middle a,
+  .nav-right a,
+  .signup-btn,
+  .freesignup-btn {
+      font-size: 14px;
+  }
+
+  .signup-btn,
+  .freesignup-btn,
+  .demo-btn {
+      padding: 10px 20px;
+  }
+
+  .top-section,
+  .bottom-section {
+      margin: 20px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .cards,
+  .service {
+      width: 100%; /* Each card will take full width */
+      box-sizing: border-box;
+      margin-bottom: 10px;
+  }
+
+  .cards h2,
+  .cards p,
+  .service h2,
+  .service p {
+      text-align: center;
+  }
+
+  .website img,
+  .form img,
+  .subscription img {
+      width: 50px; 
   }
 }
