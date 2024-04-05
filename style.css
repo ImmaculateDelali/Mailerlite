@@ -121,3 +121,49 @@ body, html {
   margin-top: 40px;
     
 }
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px; /* or any max-width or % based on design */
+  width: 100%;
+}
+
+.service {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 30%; /* Adjust based on the actual design */
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: #0000EE; /* default link color */
+  font-weight: bold;
+}
+
+/* Responsive Design: Example for smaller screens */
+@media (max-width: 768px) {
+  .service-container {
+    flex-direction: column;
+  }
+  .service {
+    width: 100%;
+  }
+}
