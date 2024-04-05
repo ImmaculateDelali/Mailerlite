@@ -32,7 +32,7 @@
     </nav>
 
     <div class="header">
-      <h1>Create <span>email marketing</span> <br>your audience will love</h1>
+      <h1>Create <span id="changingText">email marketing</span> <br>your audience will love</h1>
       <h4>Digital marketing tools to grow your audience faster and drive revenue smarter. Backed by 24/7 award-winning support.</h4>
       <button class="signup-btn">Sign Up for free</button>
       <button class="demo-btn ">Watch demo</button>
@@ -42,40 +42,38 @@
 
 
 
-    <section class="email-campaigns">
-      <h2>Email campaigns →</h2>
+    <section class="hero-containers">
+      <div class="cards">
+      <img src="images/email.png" alt="">
+      <h2>Email campaigns &rarr;</h2>
       <p>Create engaging dynamic emails in minutes with our intuitive drag and drop email editor</p>
-  </section>
-  
-  <section class="tracking">
-      <h2>Track your results →</h2>
+    </div>
+
+
+    <div class="cards">
+      <img src="images/mailer.jpg" alt="">
+        </div>
+
+        
+    <div class="cards">
+      <img src="images/track your results.png" alt="">
+      <h2>Track your results &rarr;</h2>
       <p>Monitor performance to know what best works for your business</p>
-      <!-- Include a chart library or custom SVG for the graph -->
-  </section>
-  
-  <aside>
-      <article class="ebook">
-          <h3>Ebook</h3>
+      </div>
+
+
+      <div class="cards">
+        <img src="images/ebook.png" alt="">
+        <h2>Ebook &rarr;</h2>
           <p>Matt Ridley explores the causes of innovation and force that drives our modern economy</p>
-          <p class="price">15.99 USD</p>
-          <!-- Cover image here -->
-      </article>
-  
-      <article class="discount">
-          <h3>Get Your Discount</h3>
-          <p>-40%</p>
-          <!-- Details about the discount here -->
-      </article>
-  </aside>
-  
-  <section class="digital-products">
-      <h2>Sell digital products →</h2>
-      <p>Sell ebooks, downloads or whatever else will help you subscribe</p>
-  </section>
-  
-  <section class="automations">
-      <h2>Automations →</h2>
-      <p>Send perfectly timed and targeted emails automatically</p>
+          </div>
+
+
+          <div class="cards">
+            <img src="images/discount.png" alt="">
+            <h2>Automations &rarr;</h2>
+            <p>Send perfectly timed and targeted emails automatically</p>
+          </div>
   </section>
 
   
@@ -106,4 +104,20 @@
 <body>
     
 </body>
+<script>
+  (function() {
+  var changingText = document.getElementById("changingText");
+  var words = ["automations", "landing pages", "signup forms", "websites"];
+  var currentWordIndex = 0;
+  setInterval(function() {
+    changingText.style.height = "0"; // Slide up by setting height to 0
+    changingText.style.transition = "height 20.0s ease-in-out";
+    setTimeout(function() {
+      changingText.innerHTML = words[currentWordIndex];
+      changingText.style.height = "1em"; // Set height back to one line
+      currentWordIndex = (currentWordIndex + 1) % words.length;
+    }, 500); // Wait for the sliding animation to complete before changing text
+  }, 1000); // Change text every 5 seconds
+})();
+            </script>
 </html>

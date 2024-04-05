@@ -67,6 +67,15 @@ body, html {
     color: #5D5757; /* Change the color on hover as needed */
 }
 
+#changingText {
+  overflow: hidden;
+  height: 1em;
+  background-color: #CDF3E1;
+  color: black;
+  padding: 0.1em;
+  border-radius: 0.2em;
+  transition: height 0.5s ease-in-out;
+}
 .signup-btn {
     background-color: #00C75E;
     border: none;
@@ -122,11 +131,36 @@ body, html {
     
 }
 
+.hero-containers {
+  margin-top: 50px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px; /* or any max-width or % based on design */
+  width: 100%;
+}
+
+.cards{
+  
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 30%; /* Adjust based on the actual design */
+}
+
+.cards img {
+  max-width: 100%;
+  height: auto;
+}
+
 .service-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1500px; /* or any max-width or % based on design */
+  max-width: 1400px; /* or any max-width or % based on design */
   width: 100%;
   margin-bottom: 200px;
 }
@@ -145,7 +179,7 @@ body, html {
 margin-left: 100px;
 }
 .website img{
-  width: 40px;
+  width: 30px;
 }
 
 .website h2{
@@ -164,7 +198,7 @@ margin-left: 100px;
   margin-left: 100px;
   }
   .form img{
-    width: 40px;
+    width: 30px;
   }
   .form h2{
     margin-top: 10px;
@@ -181,7 +215,7 @@ margin-left: 100px;
     margin-left: 100px;
     }
     .subscription img{
-      width: 40px;
+      width: 30px;
     }
     .subscription h2{
       margin-top: 10px;
